@@ -26,6 +26,3 @@ let sevenBoom = (arrayArgument) => {
     return seven == "present"? "Boom!": "None of the items contains no. 7 within them"
 }
 
-console.log(sevenBoom(array))
-
-module.exports = sevenBoom
