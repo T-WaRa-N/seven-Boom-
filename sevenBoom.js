@@ -1,7 +1,7 @@
 //function that return boom! there is a number
 // Seven in an array.
 
-let array = [5, 0, 8, 11]
+let array = [5, 7, 8, 11]
 
 let sevenBoom = (arrayArgument) => {
    let seven = "absent"
@@ -10,11 +10,9 @@ let sevenBoom = (arrayArgument) => {
           seven = "present"
         }
    }
-   if(seven == "present"){
-       return "Boom!"
-   }else{
-       return  "None of the items contains no. 7 within them"
-   }
+    return seven == "present"? "Boom!": "None of the items contains no. 7 within them"
 }
+
+console.log(sevenBoom(array))
 
 module.exports = sevenBoom
